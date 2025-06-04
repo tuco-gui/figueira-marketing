@@ -1,0 +1,158 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.section {
+    padding: 60px 20px;
+}
+
+.section.gray {
+    background: #f3f3f3;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    color: #000;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.bullets li,
+.models li {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background: #E31937;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.video-wrapper {
+    margin-top: 20px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-responsive th,
+.table-responsive td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.testimonials blockquote {
+    border-left: 4px solid #E31937;
+    margin: 20px 0;
+    padding-left: 15px;
+}
+
+.map {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.blog-links li {
+    margin-bottom: 10px;
+}
+
+.blog-links a {
+    color: #E31937;
+    text-decoration: none;
+}
+
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.question {
+    width: 100%;
+    text-align: left;
+    background: #E31937;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.answer {
+    display: none;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-top: none;
+}
+
+.consult-form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+}
+
+.consult-form input,
+.consult-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.consult-form textarea {
+    resize: vertical;
+}
+
+@media (min-width: 768px) {
+    h1 { font-size: 2.5rem; }
+    h2 { font-size: 2rem; }
+}
