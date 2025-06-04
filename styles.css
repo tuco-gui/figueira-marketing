@@ -1,26 +1,66 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background: #fff;
-    color: #333;
+    background: #111;
+    color: #eee;
     line-height: 1.6;
 }
 
 .section {
-    padding: 60px 20px;
+    background: #1e1e1e;
+    padding: 80px 20px;
 }
 
 .section.gray {
-    background: #f3f3f3;
+    background: #272727;
 }
 
 .container {
-    max-width: 900px;
+    padding: 0 20px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
+.site-header {
+    position: sticky;
+    top: 0;
+    background: #1e1e1e;
+    z-index: 1000;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    color: #E31937;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #eee;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #eee;
+    font-size: 1.5rem;
+}
+
 h1, h2 {
-    color: #000;
+    color: #E31937;
     margin-bottom: 20px;
 }
 
@@ -127,11 +167,15 @@ h2 {
 }
 
 .answer {
-    display: none;
-    padding: 10px;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-top: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.answer.show {
+    max-height: 200px;
+    opacity: 1;
 }
 
 .consult-form {
@@ -150,6 +194,26 @@ h2 {
 
 .consult-form textarea {
     resize: vertical;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #1e1e1e;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        display: none;
+    }
+    .menu.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
 }
 
 @media (min-width: 768px) {
