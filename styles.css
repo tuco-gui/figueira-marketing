@@ -20,7 +20,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .site-header {
     position: sticky;
     top: 0;
@@ -58,6 +57,7 @@ body {
     color: #eee;
     font-size: 1.5rem;
 }
+
 
 h1, h2 {
     color: #E31937;
@@ -177,7 +177,6 @@ h2 {
     max-height: 200px;
     opacity: 1;
 }
-
 .consult-form {
     display: grid;
     gap: 10px;
