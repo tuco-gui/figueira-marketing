@@ -1,0 +1,11 @@
+{
+  "name": "figueira-marketing",
+  "version": "1.0.0",
+  "description": "Landing page for Figueira Marketing",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}
