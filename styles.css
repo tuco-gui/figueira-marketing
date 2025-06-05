@@ -64,6 +64,53 @@
     </div>
 </section>
 
+<section id="solucoes" class="section">
+    <div class="container">
+        <h2>🚀 Soluções Figueira Marketing</h2>
+        <p style="max-width: 700px; margin: 0 auto 30px;">
+            Somos especialistas em <strong>crescimento estratégico com valores sólidos</strong>. Cada solução foi pensada para gerar performance com alma, respeitando a identidade do seu negócio ou ministério.
+        </p>
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Soluções</th>
+                        <th>Entregas</th>
+                        <th>Resultados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gestão de Tráfego</td>
+                        <td>Meta Ads, Google, YouTube</td>
+                        <td>ROI acima de 5x com escala controlada</td>
+                    </tr>
+                    <tr>
+                        <td>Criativos de Alta Conversão</td>
+                        <td>Vídeos, reels, imagens com copy neuro e testes A/B</td>
+                        <td>CTR superior à média do mercado</td>
+                    </tr>
+                    <tr>
+                        <td>Páginas e Funis de Vendas</td>
+                        <td>Landing pages, UTM, Heatmaps, UX otimizado</td>
+                        <td>Taxa de conversão de até 30%</td>
+                    </tr>
+                    <tr>
+                        <td>CRM & Automação</td>
+                        <td>Kommo, Bitrix24, Pipedrive, funis e bots</td>
+                        <td>Follow-up automático que gera vendas</td>
+                    </tr>
+                    <tr>
+                        <td>Diagnóstico Estratégico</td>
+                        <td>Método Figueira com cruzamento de dados + princípios bíblicos</td>
+                        <td>Clareza, foco e plano de ação escalável</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
 <script src="script.js"></script>
 </body>
 </html>
