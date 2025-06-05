@@ -1,4 +1,4 @@
-/* styles.css com header escuro e corpo branco, layout limpo e responsivo */
+/* styles.css com correções no header escuro e responsividade do menu */
 
 /* RESET */
 * {
@@ -150,6 +150,7 @@ img {
 .menu {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 .menu a {
   color: #ffffff;
@@ -162,9 +163,10 @@ img {
 .menu-toggle {
   display: none;
   font-size: 1.5rem;
-  color: #fff;
+  color: #ffffff;
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -192,6 +194,7 @@ img {
   font-size: 24px;
   z-index: 9999;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  text-decoration: none;
 }
 
 /* FORM */
@@ -209,20 +212,12 @@ form textarea {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
-  header, section, footer {
-    padding: 2rem 1rem;
-  }
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-  h3 { font-size: 1.25rem; }
-  p, li { font-size: 0.95rem; }
-  .btn { width: 100%; }
   .menu {
     display: none;
     flex-direction: column;
     background-color: #111;
     position: absolute;
-    top: 100%;
+    top: 60px;
     left: 0;
     right: 0;
     padding: 1rem;
@@ -232,6 +227,9 @@ form textarea {
   }
   .menu-toggle {
     display: block;
+  }
+  .btn {
+    width: 100%;
   }
   table, thead, tbody, th, td, tr {
     display: block;
