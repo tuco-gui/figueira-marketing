@@ -1,116 +1,261 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figueira Marketing</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/a6907f3c74.js" crossorigin="anonymous"></script>
-</head>
-<body>
-<header class="site-header">
-    <div class="container">
-        <a href="#hero" class="logo">Figueira Marketing</a>
-        <nav class="menu">
-            <a href="#porque">Por que escolher</a>
-            <a href="#solucoes">Soluções</a>
-            <a href="#modelos">Modelos</a>
-            <a href="#depoimentos">Depoimentos</a>
-            <a href="#consultoria">Consultoria</a>
-        </nav>
-        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
-    </div>
-</header>
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: #111;
+    color: #eee;
+    line-height: 1.6;
+}
 
-<a href="https://wa.me/5514997554659" class="whatsapp-fixed" target="_blank" rel="noopener">
-    <i class="fab fa-whatsapp"></i>
-</a>
+/* === SECTIONS === */
+.section {
+    background: #1e1e1e;
+    padding: 100px 20px 60px;
+    text-align: center;
+}
 
-<section id="hero" class="section">
-    <div class="container">
-        <h1>🌿 Conectamos Propósito com Performance</h1>
-        <h2 style="color: #ccc; font-weight: 400;">
-            A agência que une fé, dados e estratégia para multiplicar seus resultados com propósito.
-        </h2>
-        <p style="max-width: 700px; margin: 20px auto;">
-            Somos a <strong>Figueira Marketing</strong>: uma agência cristã de marketing de performance que aplica o método da V4 Company com <strong>princípios bíblicos</strong>, neuromarketing e tecnologia.
-            Trabalhamos com quem quer crescer de verdade – com alma e com método.
-        </p>
-        <a href="https://wa.me/5514997554659" class="btn-primary" target="_blank" rel="noopener">
-            💬 Agende sua Consultoria Gratuita
-        </a>
-        <p style="margin-top: 10px; font-size: 0.9em; color: #aaa;">Sem compromisso. Diagnóstico completo. Online.</p>
-        <div class="video-wrapper" style="margin-top: 40px;">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video" frameborder="0" allowfullscreen></iframe>
-        </div>
-    </div>
-</section>
+.section.gray {
+    background: #272727;
+}
 
-<section id="porque" class="section gray">
-    <div class="container">
-        <h2>🔍 Por que escolher a Figueira Marketing?</h2>
-        <p style="max-width: 700px; margin: 0 auto 30px;">
-            Não somos apenas uma agência. Somos um <strong>projeto com propósito</strong> que une <strong>inteligência de mercado</strong> e <strong>valores eternos</strong>.
-            Aqui, cada estratégia é construída com <strong>ética, dados e direção espiritual</strong>.
-        </p>
-        <ul class="bullets">
-            <li>🌱 Missão clara: impactar vidas e negócios com responsabilidade.</li>
-            <li>📊 Estratégias baseadas em dados e princípios bíblicos.</li>
-            <li>💼 Resultados comprovados com transparência e verdade.</li>
-            <li>🧠 Aplicação do método V4 com adaptação cristã.</li>
-            <li>🙏 Equipe com visão de Reino e foco em performance.</li>
-        </ul>
-    </div>
-</section>
+.section p {
+    font-size: 1.1rem;
+    color: #eee;
+    line-height: 1.7;
+}
 
-<section id="solucoes" class="section">
-    <div class="container">
-        <h2>🚀 Soluções Figueira Marketing</h2>
-        <p style="max-width: 700px; margin: 0 auto 30px;">
-            Somos especialistas em <strong>crescimento estratégico com valores sólidos</strong>. Cada solução foi pensada para gerar performance com alma, respeitando a identidade do seu negócio ou ministério.
-        </p>
-        <div class="table-responsive">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Soluções</th>
-                        <th>Entregas</th>
-                        <th>Resultados</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Gestão de Tráfego</td>
-                        <td>Meta Ads, Google, YouTube</td>
-                        <td>ROI acima de 5x com escala controlada</td>
-                    </tr>
-                    <tr>
-                        <td>Criativos de Alta Conversão</td>
-                        <td>Vídeos, reels, imagens com copy neuro e testes A/B</td>
-                        <td>CTR superior à média do mercado</td>
-                    </tr>
-                    <tr>
-                        <td>Páginas e Funis de Vendas</td>
-                        <td>Landing pages, UTM, Heatmaps, UX otimizado</td>
-                        <td>Taxa de conversão de até 30%</td>
-                    </tr>
-                    <tr>
-                        <td>CRM & Automação</td>
-                        <td>Kommo, Bitrix24, Pipedrive, funis e bots</td>
-                        <td>Follow-up automático que gera vendas</td>
-                    </tr>
-                    <tr>
-                        <td>Diagnóstico Estratégico</td>
-                        <td>Método Figueira com cruzamento de dados + princípios bíblicos</td>
-                        <td>Clareza, foco e plano de ação escalável</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</section>
+.container {
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
-<script src="script.js"></script>
-</body>
-</html>
+/* === HEADER === */
+.site-header {
+    position: sticky;
+    top: 0;
+    background: #111;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: #E31937;
+    font-weight: 700;
+    font-size: 1.3rem;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.menu {
+    display: flex;
+    gap: 24px;
+}
+
+.menu a {
+    color: #eee;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #E31937;
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: #eee;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* === HEADLINES === */
+h1 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #E31937;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* === LISTAS === */
+.bullets li,
+.models li {
+    margin-bottom: 10px;
+}
+
+/* === BOTÕES === */
+.btn-primary {
+    display: inline-block;
+    background: #E31937;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+/* === VÍDEO === */
+.video-wrapper {
+    margin-top: 40px;
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* === TABELA === */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table-responsive table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-responsive th,
+.table-responsive td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+/* === DEPOIMENTOS === */
+.testimonials blockquote {
+    border-left: 4px solid #E31937;
+    margin: 20px 0;
+    padding-left: 15px;
+}
+
+/* === MAPA === */
+.map {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* === BLOG === */
+.blog-links li {
+    margin-bottom: 10px;
+}
+
+.blog-links a {
+    color: #E31937;
+    text-decoration: none;
+}
+
+/* === WHATSAPP FIXO === */
+.whatsapp-fixed {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: #fff;
+    padding: 16px;
+    border-radius: 50%;
+    font-size: 26px;
+    z-index: 1000;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.whatsapp-fixed:hover {
+    transform: scale(1.1);
+}
+
+/* === FAQ === */
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.question {
+    width: 100%;
+    text-align: left;
+    background: #E31937;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.answer {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.answer.show {
+    max-height: 200px;
+    opacity: 1;
+}
+
+/* === FORMULÁRIO === */
+.consult-form {
+    display: grid;
+    gap: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.consult-form input,
+.consult-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.consult-form textarea {
+    resize: vertical;
+}
+
+/* === RESPONSIVO === */
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #1e1e1e;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        display: none;
+    }
+    .menu.show {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 1.8rem; }
+}
