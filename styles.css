@@ -138,7 +138,7 @@ h2 {
 .table-responsive th,
 .table-responsive td {
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
     text-align: left;
 }
 
@@ -247,9 +247,11 @@ h2 {
         padding: 10px;
         display: none;
     }
+
     .menu.show {
         display: flex;
     }
+
     .menu-toggle {
         display: block;
     }
