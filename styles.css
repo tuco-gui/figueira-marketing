@@ -1,246 +1,183 @@
-/* styles.css com correções no header escuro e responsividade do menu */
+/* styles.css atualizado para layout completo com formulário e FAQ animado */
 
-/* RESET */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  line-height: 1.6;
   background-color: #ffffff;
-  color: #333333;
-  overflow-x: hidden;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 1.2rem;
-}
-
-header, section, footer {
-  padding: 4rem 1rem;
-}
-
-h1, h2, h3 {
-  font-weight: 700;
-  margin-bottom: 1rem;
   color: #1a1a1a;
+  line-height: 1.6;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-p, li {
-  font-size: 1rem;
-  color: #444;
+header h1 {
+  font-size: 1.5rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #E31937;
+}
+
+main {
+  padding-top: 6rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-ul {
-  padding-left: 1.5rem;
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-a {
-  color: #e31937;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-
-.btn, .btn-primary {
-  background-color: #e31937;
+.cta {
+  background-color: #E31937;
   color: #fff;
-  padding: 0.8rem 1.5rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
+  padding: 1rem;
   text-align: center;
+  border-radius: 8px;
+  margin-top: 2rem;
+  text-decoration: none;
   display: inline-block;
 }
-.btn:hover, .btn-primary:hover {
-  background-color: #c4162f;
+
+.cta:hover {
+  background-color: #b7132a;
 }
 
-.section {
-  margin-bottom: 3rem;
-}
-
-.section.gray {
-  background-color: #f9f9f9;
-}
-
-.table-responsive {
-  overflow-x: auto;
-  margin-top: 2rem;
-}
+/* Tabela */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
 }
-thead {
-  background-color: #f7f7f7;
-}
-th, td {
-  text-align: left;
-  padding: 0.8rem;
-  border: 1px solid #ddd;
-}
-blockquote {
-  border-left: 4px solid #e31937;
-  padding-left: 1rem;
-  margin: 1rem 0;
-  color: #555;
-  font-style: italic;
-}
-cite {
-  display: block;
-  font-weight: bold;
-  color: #000;
-  margin-top: 0.5rem;
-}
-iframe {
-  width: 100%;
-  height: 300px;
-  border: none;
-  margin-top: 1rem;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-::selection {
-  background-color: #e31937;
-  color: #fff;
+
+table, th, td {
+  border: 1px solid #ccc;
 }
 
-/* HEADER FIXO ESCURO */
-.site-header {
-  background-color: #111;
-  color: white;
-  padding: 1rem 0;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+th, td {
+  padding: 0.75rem;
+  text-align: left;
 }
-.site-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+/* FAQ interativo */
+.faq-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
 }
-.logo {
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: #e31937;
-  text-decoration: none;
+
+.faq-question {
+  cursor: pointer;
+  background-color: #f9f9f9;
+  padding: 0.75rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
 }
-.menu {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
+
+.faq-question:hover {
+  background-color: #eee;
 }
-.menu a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 500;
-}
-.menu a:hover {
-  color: #e31937;
-}
-.menu-toggle {
+
+.faq-answer {
+  padding: 0.75rem;
   display: none;
-  font-size: 1.5rem;
-  color: #ffffff;
-  background: none;
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.faq-item.active .faq-answer {
+  display: block;
+}
+
+/* Formulário */
+form {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #E31937;
+  color: #fff;
   border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-/* FOOTER */
-.site-footer {
-  background-color: #111;
-  color: white;
+form button:hover {
+  background-color: #b7132a;
+}
+
+/* Rodapé */
+footer {
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
   text-align: center;
-  padding: 2rem 1rem;
-}
-.site-footer a {
-  color: #e31937;
-  margin: 0 0.5rem;
-  text-decoration: none;
+  font-size: 0.9rem;
 }
 
-/* WHATSAPP */
-.whatsapp-fixed {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  padding: 16px;
-  border-radius: 50%;
-  font-size: 24px;
-  z-index: 9999;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  text-decoration: none;
-}
-
-/* FORM */
-form input, form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-}
-form textarea {
-  resize: vertical;
-  min-height: 120px;
-}
-
-/* RESPONSIVO */
+/* Responsivo */
 @media (max-width: 768px) {
-  .menu {
-    display: none;
+  nav ul {
     flex-direction: column;
-    background-color: #111;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    right: 0;
-    padding: 1rem;
-  }
-  .menu.show {
-    display: flex;
-  }
-  .menu-toggle {
-    display: block;
-  }
-  .btn {
-    width: 100%;
-  }
-  table, thead, tbody, th, td, tr {
-    display: block;
-    width: 100%;
-  }
-  th {
-    background-color: #f0f0f0;
-  }
-  td {
-    margin-bottom: 0.5rem;
-    border: none;
-    border-bottom: 1px solid #ddd;
+    align-items: flex-start;
   }
 }
